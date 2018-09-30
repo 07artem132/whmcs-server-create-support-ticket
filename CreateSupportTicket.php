@@ -20,126 +20,126 @@ function CreateSupportTicket_ConfigOptions() {
 	}
 
 	$configarray = [
-		"CreateAccount"           => [
+		"CreateAccount"            => [
 			"FriendlyName" => "Создание услуги",
 			"Type"         => "dropdown",
 			"Options"      => "Ничего не делать,Создать тикет",
 			"Default"      => "Создать тикет",
 		],
-		"SuspendAccount"          => [
+		"SuspendAccount"           => [
 			"FriendlyName" => "Приостановка услуги",
 			"Type"         => "dropdown",
 			"Options"      => "Ничего не делать,Создать тикет",
 			"Default"      => "Создать тикет",
 		],
-		"SubjectCreateAccount"    => [
+		"SubjectCreateAccount"     => [
 			"FriendlyName" => "Тема при создании услуги",
 			"Type"         => "text",
 			"Default"      => "Создание услуги",
 		],
-		"SubjectSuspendAccount"   => [
+		"SubjectSuspendAccount"    => [
 			"FriendlyName" => "Тема при приостановке услуги",
 			"Type"         => "text",
 			"Default"      => "Приостановка услуги",
 		],
-		"MessageCreateAccount"    => [
+		"MessageCreateAccount"     => [
 			"FriendlyName" => "Сообщение при создании услуги",
 			"Type"         => "textarea",
 			"Default"      => "Просьба создать услугу #%serviceid%",
 		],
-		"MessageSuspendAccount"   => [
+		"MessageSuspendAccount"    => [
 			"FriendlyName" => "Сообщение при приостановке услуги",
 			"Type"         => "textarea",
 			"Default"      => "Просьба приостановить услугу #%serviceid%",
 		],
-		"PriorityCreateAccount"   => [
+		"PriorityCreateAccount"    => [
 			"FriendlyName" => "Приоритет тикета для создания услуги",
 			"Type"         => "dropdown",
 			"Options"      => "Low,Medium,High",
 			"Default"      => "Low",
 		],
-		"PrioritySuspendAccount"  => [
+		"PrioritySuspendAccount"   => [
 			"FriendlyName" => "Приоритет тикета для приостановки услуги",
 			"Type"         => "dropdown",
 			"Options"      => "Low,Medium,High",
 			"Default"      => "Low",
 		],
-		"UnsuspendAccount"        => [
+		"UnsuspendAccount"         => [
 			"FriendlyName" => "Возобновление услуги",
 			"Type"         => "dropdown",
 			"Options"      => "Ничего не делать,Создать тикет",
 			"Default"      => "Создать тикет",
 		],
-		"TerminateAccount"        => [
+		"TerminateAccount"         => [
 			"FriendlyName" => "Удаление услуги",
 			"Type"         => "dropdown",
 			"Options"      => "Ничего не делать,Создать тикет",
 			"Default"      => "Создать тикет",
 		],
-		"SubjectUnsuspendAccount" => [
+		"SubjectUnsuspendAccount"  => [
 			"FriendlyName" => "Тема при возобновлении услуги",
 			"Type"         => "text",
 			"Default"      => "Возобновление услуги",
 		],
-		"SubjectTerminateAccount" => [
+		"SubjectTerminateAccount"  => [
 			"FriendlyName" => "Тема при удалении услуги",
 			"Type"         => "text",
 			"Default"      => "Удаление услуги",
 		],
-		"MessageUnsuspendAccount" => [
+		"MessageUnsuspendAccount"  => [
 			"FriendlyName" => "Сообщение при возобновлении услуги",
 			"Type"         => "textarea",
 			"Default"      => "Просьба возобновить услугу #%serviceid%",
 		],
-		"MessageTerminateAccount" => [
+		"MessageTerminateAccount"  => [
 			"FriendlyName" => "Сообщение при удалении услуги",
 			"Type"         => "textarea",
 			"Default"      => "Просьба удалить услугу #%serviceid%",
 		],
-		"PriorityUnsuspendAccount"       => [
+		"PriorityUnsuspendAccount" => [
 			"FriendlyName" => "Приоритет тикета для возобновления услуги",
 			"Type"         => "dropdown",
 			"Options"      => "Low,Medium,High",
 			"Default"      => "Low",
 		],
-		"PriorityTerminateAccount"       => [
+		"PriorityTerminateAccount" => [
 			"FriendlyName" => "Приоритет тикета для удаления услуги",
 			"Type"         => "dropdown",
 			"Options"      => "Low,Medium,High",
 			"Default"      => "Low",
 		],
-		"Renew"                   => [
+		"Renew"                    => [
 			"FriendlyName" => "Продление услуги",
 			"Type"         => "dropdown",
 			"Options"      => "Ничего не делать,Создать тикет",
 			"Default"      => "Создать тикет",
 		],
-		"SupportDepartment"       => [
+		"SupportDepartment"        => [
 			"FriendlyName" => "Отдел техподдержки",
 			"Type"         => "dropdown",
 			"Options"      => implode( ",", $depts )
 		],
-		"SubjectRenew"            => [
+		"SubjectRenew"             => [
 			"FriendlyName" => "Тема при продлении услуги",
 			"Type"         => "text",
 			"Default"      => "Продление услуги",
 		],
-		"LoadAdditionalFields"    => [
+		"LoadAdditionalFields"     => [
 			"FriendlyName" => "Подставлять значение из доп полей в сообщения при создании тикета",
 			"Type"         => "yesno",
 			"Description"  => "Используйте формат: %имя дополнительного поля%",
 			"Default"      => "yes",
 		],
-		"MessageRenew"            => [
+		"MessageRenew"             => [
 			"FriendlyName" => "Сообщение при продлении услуги",
 			"Type"         => "textarea",
 			"Default"      => "Просьба продлить услугу #%serviceid%",
 		],
-		""                        => [
+		""                         => [
 			"Type"        => "none",
-			"Description" => "Доступные глобальные параметры:<br/> %serviceid% - идентификатор услуги<br/>",
+			"Description" => "Доступные глобальные параметры:<br/> %serviceid% - идентификатор услуги<br/>%serviceid% - идентификатор услуги <br/> %userid% - ид клиента<br/> %producttype% - тип продукта<br/> %clientFirstName% - имя клиента<br/> %clientLastName% - фамилия клиента<br/> %clientFullName% - полное имя клиента<br/> %clientCompanyName% - название компании клиента<br/> %clientEmail%  - email адрес клиента",
 		],
-		"PriorityRenew"           => [
+		"PriorityRenew"            => [
 			"FriendlyName" => "Приоритет тикета для продления услуги",
 			"Type"         => "dropdown",
 			"Options"      => "Low,Medium,High",
@@ -151,7 +151,16 @@ function CreateSupportTicket_ConfigOptions() {
 }
 
 function CreateSupportTicket_CreateAccount( $params ) {
-	$macroFields = [ '%serviceid%' => $params['serviceid'] ];
+	$macroFields = [
+		'%serviceid%'         => $params['serviceid'],
+		'%userid%'            => $params['userid'],
+		'%producttype%'       => $params['producttype'],
+		'%clientFirstName%'   => $params['clientsdetails']['firstname'],
+		'%clientLastName%'    => $params['clientsdetails']['lastname'],
+		'%clientFullName%'    => $params['clientsdetails']['fullname'],
+		'%clientCompanyName%' => $params['clientsdetails']['companyname'],
+		'%clientEmail%'       => $params['clientsdetails']['email'],
+	];
 
 	$action               = $params['configoption1'];
 	$subject              = $params['configoption3'];
@@ -190,7 +199,16 @@ function CreateSupportTicket_CreateAccount( $params ) {
 }
 
 function CreateSupportTicket_SuspendAccount( $params ) {
-	$macroFields = [ '%serviceid%' => $params['serviceid'] ];
+	$macroFields = [
+		'%serviceid%'         => $params['serviceid'],
+		'%userid%'            => $params['userid'],
+		'%producttype%'       => $params['producttype'],
+		'%clientFirstName%'   => $params['clientsdetails']['firstname'],
+		'%clientLastName%'    => $params['clientsdetails']['lastname'],
+		'%clientFullName%'    => $params['clientsdetails']['fullname'],
+		'%clientCompanyName%' => $params['clientsdetails']['companyname'],
+		'%clientEmail%'       => $params['clientsdetails']['email'],
+	];
 
 	$action               = $params['configoption2'];
 	$subject              = $params['configoption4'];
@@ -229,7 +247,16 @@ function CreateSupportTicket_SuspendAccount( $params ) {
 }
 
 function CreateSupportTicket_UnsuspendAccount( $params ) {
-	$macroFields = [ '%serviceid%' => $params['serviceid'] ];
+	$macroFields = [
+		'%serviceid%'         => $params['serviceid'],
+		'%userid%'            => $params['userid'],
+		'%producttype%'       => $params['producttype'],
+		'%clientFirstName%'   => $params['clientsdetails']['firstname'],
+		'%clientLastName%'    => $params['clientsdetails']['lastname'],
+		'%clientFullName%'    => $params['clientsdetails']['fullname'],
+		'%clientCompanyName%' => $params['clientsdetails']['companyname'],
+		'%clientEmail%'       => $params['clientsdetails']['email'],
+	];
 
 	$action               = $params['configoption9'];
 	$subject              = $params['configoption11'];
@@ -268,7 +295,16 @@ function CreateSupportTicket_UnsuspendAccount( $params ) {
 }
 
 function CreateSupportTicket_TerminateAccount( $params ) {
-	$macroFields = [ '%serviceid%' => $params['serviceid'] ];
+	$macroFields = [
+		'%serviceid%'         => $params['serviceid'],
+		'%userid%'            => $params['userid'],
+		'%producttype%'       => $params['producttype'],
+		'%clientFirstName%'   => $params['clientsdetails']['firstname'],
+		'%clientLastName%'    => $params['clientsdetails']['lastname'],
+		'%clientFullName%'    => $params['clientsdetails']['fullname'],
+		'%clientCompanyName%' => $params['clientsdetails']['companyname'],
+		'%clientEmail%'       => $params['clientsdetails']['email'],
+	];
 
 	$action               = $params['configoption10'];
 	$subject              = $params['configoption12'];
@@ -307,7 +343,16 @@ function CreateSupportTicket_TerminateAccount( $params ) {
 }
 
 function CreateSupportTicket_Renew( $params ) {
-	$macroFields = [ '%serviceid%' => $params['serviceid'] ];
+	$macroFields = [
+		'%serviceid%'         => $params['serviceid'],
+		'%userid%'            => $params['userid'],
+		'%producttype%'       => $params['producttype'],
+		'%clientFirstName%'   => $params['clientsdetails']['firstname'],
+		'%clientLastName%'    => $params['clientsdetails']['lastname'],
+		'%clientFullName%'    => $params['clientsdetails']['fullname'],
+		'%clientCompanyName%' => $params['clientsdetails']['companyname'],
+		'%clientEmail%'       => $params['clientsdetails']['email'],
+	];
 
 	$action               = $params['configoption17'];
 	$subject              = $params['configoption19'];
